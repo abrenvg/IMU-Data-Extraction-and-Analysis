@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML5 Sensor Fusion </title>
+  <style type="text/css">
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+
+
+</head>
+
+<body onload="init();">
+
+  <canvas id="AccCanvas" width="500" height="200"></canvas>
+  <canvas id="GyroCanvas" width="500" height="200"></canvas>
+  <canvas id="SensorFusion" width="500" height="200"></canvas>
+  <p>
+    <button onclick="start()">Start sensor</button>
+    <button onclick="stop()">Stop sensor</button>
+    <button onclick="saveToFile()">Save to file</button>
+  </p>
+
+  <script src="polar.js"></script>
+  <script src="filter.js"></script>
+</body>
+
+</html>
